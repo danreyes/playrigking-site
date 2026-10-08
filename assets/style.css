@@ -124,7 +124,8 @@ h3 { font-size: 20px; margin: 0 0 6px; }
 }
 dl.faq dt { font-weight: 800; margin-top: 22px; }
 dl.faq dd { margin: 6px 0 0; color: #e9e0cb; }
-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+table { width: 100%; border-collapse: collapse; font-size: 16px; table-layout: fixed; }
+th { width: 36%; }   /* the same name column in every table */
 th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(247,237,214,.1); vertical-align: top; }
 th { color: var(--muted); font-weight: 700; }
 
