@@ -151,3 +151,6 @@ th { color: var(--muted); font-weight: 700; }
   .store { flex: 1 1 100%; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Licence texts on the credits page */
+.licence { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; line-height: 1.5; color: var(--muted); background: rgba(247,237,214,.04); border: 1px solid rgba(247,237,214,.1); border-radius: 10px; padding: 14px 16px; margin: 8px 0 24px; }
