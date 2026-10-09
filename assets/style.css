@@ -101,7 +101,7 @@ h3 { font-size: 20px; margin: 0 0 6px; }
 .tracks li { background: var(--ink-3); border-radius: 14px; padding: 16px 18px; }
 .tracks li b { display: block; }
 .tracks li span { color: var(--muted); font-size: 15px; }
-.tag { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+.tracks li .tag, .tag { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
   color: var(--ink); background: var(--good); border-radius: 999px; padding: 2px 9px; margin-top: 8px; }
 .tag.pack { background: var(--accent); }
 
