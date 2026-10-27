@@ -168,3 +168,29 @@ th { color: var(--muted); font-weight: 700; }
 
 /* Licence texts on the credits page */
 .licence { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; line-height: 1.5; color: var(--muted); background: rgba(247,237,214,.04); border: 1px solid rgba(247,237,214,.1); border-radius: 10px; padding: 14px 16px; margin: 8px 0 24px; }
+
+/* Play together page */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.page .track h3 { margin: 22px 0 6px; font-size: 18px; }
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 18px 0; display: grid; gap: 12px; }
+.page .steps { padding: 0; }
+.steps li { counter-increment: step; position: relative; padding: 14px 16px 14px 62px; background: var(--ink-3); border-radius: 14px; }
+.steps li::before {
+  content: counter(step); position: absolute; left: 14px; top: 14px; width: 34px; height: 34px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--accent); color: var(--ink); font-weight: 900;
+}
+.page figure.shot, .page figure.placeholder { margin: 20px 0 24px; }
+.page figure.shot img { border-radius: 12px; width: 100%; height: auto; }
+.page figure figcaption { color: var(--muted); font-size: 15px; margin-top: 8px; }
+.page figure.placeholder .slot {
+  aspect-ratio: 16 / 9; display: grid; place-content: center; text-align: center; gap: 4px; padding: 16px;
+  border: 2px dashed rgba(247, 237, 214, .3); border-radius: 12px; color: var(--muted); background: rgba(247, 237, 214, .04);
+}
+.page figure.placeholder .slot span { font-weight: 800; color: var(--sand); }
+.page table th[scope="col"] { width: auto; }
+.page table tbody th { width: 25%; color: var(--sand); }
+@media (max-width: 620px) {
+  .page table { font-size: 15px; }
+  .page table th, .page table td { padding: 10px 4px; }
+  .steps li { padding-left: 56px; }
+}
